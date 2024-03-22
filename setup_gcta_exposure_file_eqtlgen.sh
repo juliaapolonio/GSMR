@@ -63,6 +63,11 @@ gunzip -c *GSMR.txt.gz | awk '!duplicate[$1]++' | awk '{ print $1}'|  sed '1d' >
 rm *tmp*
 rm *_eQTLGen_b37_GSMR.txt
 
+# Change SNP format from chr:pos:a1:a2 format to rsID
+for filename in *.txt*
+ do Rscript ~/scripts/r/format_eqtlgen.R ./$filename ./format/$filename
+done
+
 # Split "gsmr_exposure.txt" in lots of files of a given chunk size according to your RAM limit
 # Change lines_per_file according to the chunk size you prefer (usage is approx 20GB of RAM per file):
 input_file="gsmr_exposure_eqtl.txt"
