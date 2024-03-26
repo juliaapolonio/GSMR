@@ -53,11 +53,11 @@ for filename in *_tmp1.txt
 gunzip -c *GSMR.txt.gz | awk '!duplicate[$1]++' | awk '{ print $1}'|  sed '1d' > eQTLGen_exposure_variants_extract.txt
 
 # Extract above list from outcomes (i.e. IBD, CD, UC)
- for filename in *-build37.final.txt  
+ for filename in ../../BDEP_format*  
   do
-     b=${filename%%-build37.final.txt}
+     b=${filename%%_format.txt}
      echo -e "SNP\tA1\tA2\tfreq\tb\tse\tp\tn" | cat - <(cat $filename | grep -w -f eQTLGen_exposure_variants_extract.txt)    \
-     > "$b"_GRCh37.final_GSMR_eQTLGen_DEP.txt          
+     > "$b"_GSMR_eQTLGen_DEP.txt          
   done
 
 rm *tmp*
