@@ -1,0 +1,70 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 18:59:25 UTC on Tue Mar 26 2024.
+Hostname: 2c2f5261f434
+
+Accepted options:
+--mbfile gsmr.input.txt
+--gsmr-file LXN.input.txt outcome.txt
+--gsmr-direction 0
+--gsmr-snp-min 1
+--diff-freq 0.5
+--gwas-thresh 5e-08
+--clump-r2 0.05
+--heidi-thresh 0.01
+--effect-plot
+--out LXN_BDEP_rsID
+
+Warning: The number of SNP instruments included in the analysis is too small. There might not be enough SNPs to perform the HEIDI-outlier analysis.
+
+There are 22 PLINK genotype files specified in [gsmr.input.txt].
+
+Reading the PLINK FAM files ....
+503 individuals have been included from the PLINK FAM files.
+Reading the PLINK BIM files ...
+10866805 SNPs to be included from PLINK BIM files.
+
+Reading GWAS summary data for exposure(s) from [LXN.input.txt].
+Reading GWAS summary data for outcome(s) from [outcome.txt].
+1196 genome-wide significant SNPs in common between the exposure(s) and the outcome(s).
+Filtering out SNPs with multiple alleles or missing value ...
+1196 SNPs are retained after filtering.
+1193 genome-wide significant SNPs with p < 5.0e-08 are in common among the exposure(s), the outcome(s) and the LD reference sample.
+
+Reading PLINK BED files ...
+Skip reading EUR_phase3_chr20.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr16.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr2.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr12.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr22.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr15.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr3.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr18.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr14.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr11.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr21.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr19.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr4.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr17.bed, no SNPs retained on this chromosome.
+Skip reading EUR_phase3_chr13.bed, no SNPs retained on this chromosome.
+Genotype data for 503 individuals and 1193 SNPs have been included.
+Calculating allele frequencies ...
+Checking allele frequencies among the GWAS summary data and the reference sample...
+57 SNP(s) have large difference of allele frequency between the GWAS summary data and the reference sample. These SNPs have been saved in [LXN_BDEP_rsID.freq.badsnps].
+
+Forward GSMR analysis for exposure #1 and outcome #1 ...
+0 index SNPs are obtained from the clumping analysis with p < 5.0e-08 and LD r2 < 0.05.
+Warning: Not enough SNPs to perform the GSMR analysis. At least 1 SNPs are required.
+
+Warning: Not enough SNP instruments to be saved in the compressed text file.
+Saving the GSMR analyses results of 1 exposure(s) and 1 outcome(s) to [LXN_BDEP_rsID.gsmr] ...
+
+GSMR analyses completed.
+
+Analysis finished at 19:02:09 UTC on Tue Mar 26 2024
+Overall computational time: 2 minutes 44 sec.

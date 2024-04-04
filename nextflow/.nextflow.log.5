@@ -1,0 +1,101 @@
+abr.-04 08:36:28.942 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ukb_ppp_main.nf
+abr.-04 08:36:29.248 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+abr.-04 08:36:29.293 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/data/home/julia.amorim/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+abr.-04 08:36:29.322 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+abr.-04 08:36:29.324 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+abr.-04 08:36:29.332 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+abr.-04 08:36:29.354 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+abr.-04 08:36:29.387 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/nextflow.config
+abr.-04 08:36:29.388 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/nextflow.config
+abr.-04 08:36:29.429 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+abr.-04 08:36:30.684 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+abr.-04 08:36:30.731 [main] INFO  nextflow.cli.CmdRun - Launching `ukb_ppp_main.nf` [focused_leibniz] DSL2 - revision: 8d0d2d6152
+abr.-04 08:36:30.733 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+abr.-04 08:36:30.734 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-tower@1.6.3]
+abr.-04 08:36:30.734 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.6.3
+abr.-04 08:36:30.760 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.6.3' resolved
+abr.-04 08:36:30.761 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.6.3'
+abr.-04 08:36:30.815 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.6.3
+abr.-04 08:36:30.849 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /data/home/julia.amorim/.nextflow/secrets/store.json
+abr.-04 08:36:30.860 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6d5c2745] - activable => nextflow.secret.LocalSecretsProvider@6d5c2745
+abr.-04 08:36:31.014 [main] DEBUG nextflow.Session - Session UUID: 7954c478-bdee-4918-8e24-5fe3dcf9a235
+abr.-04 08:36:31.015 [main] DEBUG nextflow.Session - Run name: focused_leibniz
+abr.-04 08:36:31.016 [main] DEBUG nextflow.Session - Executor pool size: 40
+abr.-04 08:36:31.034 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+abr.-04 08:36:31.047 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+abr.-04 08:36:31.156 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (19:01 BRST)
+  System: Linux 3.10.0-1160.83.1.el7.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1210502@bioinformatica1.imd.local [10.7.43.11]
+  CPUs: 40 - Mem: 204.4 GB (62.3 GB) - Swap: 0 (0)
+abr.-04 08:36:31.228 [main] DEBUG nextflow.Session - Work-dir: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/work [nfs]
+abr.-04 08:36:31.229 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/bin
+abr.-04 08:36:31.247 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+abr.-04 08:36:31.277 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+abr.-04 08:36:31.284 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+abr.-04 08:36:31.323 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+abr.-04 08:36:31.344 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 41; maxThreads: 1000
+abr.-04 08:36:31.502 [main] DEBUG nextflow.Session - Session start
+abr.-04 08:36:32.102 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+abr.-04 08:36:33.378 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+abr.-04 08:36:33.379 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+abr.-04 08:36:33.388 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+abr.-04 08:36:33.397 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=40; memory=204.4 GB; capacity=40; pollInterval=100ms; dumpInterval=5m
+abr.-04 08:36:33.402 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+abr.-04 08:36:33.540 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+abr.-04 08:36:33.540 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+abr.-04 08:36:33.554 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_51a169c87d9bbb2c: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/ukb_ppp_main.nf
+  Script_b3212ee7f2f5b476: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/./modules/local/gcta_gsmr/gsmr.nf
+  Script_49b15ba8d3cf9bd2: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/./modules/local/r_lift/rscript_format.nf
+  Script_e644fb6da94d4bab: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/./modules/nf-core/untar/main.nf
+  Script_eeb87d2c181524c8: /storages/caico/home/julia.amorim/scripts/GSMR/nextflow/./modules/local/merge_file/merge_file.nf
+abr.-04 08:36:33.554 [main] DEBUG nextflow.Session - Session aborted -- Cause: Exception evaluating property 'merged' for nextflow.script.ChannelOut, Reason: groovy.lang.MissingPropertyException: No such property: merged for class: groovyx.gpars.dataflow.DataflowBroadcast
+abr.-04 08:36:33.583 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+  [operator] unique
+  [operator] collectFile
+  [operator] collect
+  [operator] collect
+
+abr.-04 08:36:33.596 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+abr.-04 08:36:33.602 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: Exception evaluating property 'merged' for nextflow.script.ChannelOut, Reason: groovy.lang.MissingPropertyException: No such property: merged for class: groovyx.gpars.dataflow.DataflowBroadcast
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAtIterable(DefaultGroovyMethods.java:8763)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAt(DefaultGroovyMethods.java:8751)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1927)
+	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3815)
+	at groovy.lang.DelegatingMetaClass.getProperty(DelegatingMetaClass.java:126)
+	at nextflow.script.ChannelOut.getProperty(ChannelOut.groovy:78)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:329)
+	at Script_51a169c87d9bbb2c$_runScript_closure4$_closure5.doCall(Script_51a169c87d9bbb2c:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:183)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:242)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:500)
+	at nextflow.cli.Launcher.main(Launcher.groovy:672)
+abr.-04 08:36:33.609 [Actor Thread 8] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null

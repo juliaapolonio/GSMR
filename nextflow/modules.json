@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "homePage": "",
+    "repos": {
+        "https://github.com/nf-core/modules.git": {
+            "modules": {
+                "nf-core": {
+                    "untar": {
+                        "branch": "master",
+                        "git_sha": "5caf7640a9ef1d18d765d55339be751bb0969dfa",
+                        "installed_by": [
+                            "modules"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
