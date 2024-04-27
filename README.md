@@ -1,2 +1,2 @@
 # GSMR
-Setup and Run GSMR with MTAG output as an outcome and several different QTL databases as exposures.
+Some scripts that are useful for running a GSMR analysis with QTL databases. In the future, a Nextflow pipeline with full MR+sensitivity+colocalization analysis will be available at another repo in my GitHub account.
